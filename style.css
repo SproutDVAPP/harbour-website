@@ -18,9 +18,22 @@ header {
     max-width: 200px; 
 }
 
-.video-container {
-    width: 45%; /* Adjust for the desired video size */
+.hero {
+    background-color: #222; /* Dark background */
+    color: #fff; /* White text  */
+    text-align: center;
+    padding: 60px 20px;
 }
+
+.hero h2 {
+    margin-bottom: 15px;
+}
+
+.video-container {
+    max-width: 900px;
+    margin: 0 auto 30px auto; /* Center the video */
+}
+
 
 .more-info {
     padding: 40px 0;
