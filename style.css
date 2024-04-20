@@ -1,0 +1,16 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    display: flex; /* Arranges logo and video side-by-side */
+    justify-content: space-around; 
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.more-info {
+    /* Add styles for your information section */
+}
