@@ -7,27 +7,27 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Support for Victims of Domestic Violence</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#resources">Resources</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-            </ul>
-        </nav>
-        <button id="quick-exit" onclick="quickExit()">Quick Exit</button>
-    </header>
-    <main>
-        <section id="home">
+    <div class="container">
+        <header>
+            <h1>Support for Victims of Domestic Violence</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+            <button id="quick-exit" onclick="quickExit()">Quick Exit</button>
+        </header>
+        <section id="home" class="screen">
             <h2>Welcome</h2>
             <p>This site offers resources and information for individuals experiencing domestic violence.</p>
         </section>
-        <section id="resources">
+        <section id="resources" class="screen">
             <h2>Resources</h2>
             <p>Find help, learn about domestic violence, and understand your options.</p>
         </section>
-        <section id="contact">
+        <section id="contact" class="screen">
             <h2>Contact Us</h2>
             <form id="contact-form">
                 <input type="text" id="name" name="name" placeholder="Your Name" required>
@@ -36,10 +36,10 @@
                 <button type="submit">Send Message</button>
             </form>
         </section>
-    </main>
-    <footer>
-        <p>© 2024 Support Site for Victims of Domestic Violence</p>
-    </footer>
+        <footer>
+            <p>© 2024 Support Site for Victims of Domestic Violence</p>
+        </footer>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

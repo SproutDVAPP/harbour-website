@@ -1,26 +1,33 @@
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+body, html {
+    height: 100%;
     margin: 0;
-    padding: 0;
-    background: #f4f4f4;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 100%;
+    overflow-x: hidden;
 }
 
 header {
     background: #0077cc;
     color: #ffffff;
     padding: 10px 20px;
-    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
 }
 
 header nav ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
 header nav ul li {
-    display: inline;
-    margin-right: 10px;
+    margin: 0 10px;
 }
 
 button#quick-exit {
@@ -30,27 +37,39 @@ button#quick-exit {
     padding: 10px 20px;
     cursor: pointer;
     position: absolute;
-    top: 10px;
     right: 10px;
 }
 
-main {
-    padding: 20px;
+.screen {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    padding: 20px;
+    transition: all 0.5s ease-out;
 }
 
-section {
-    margin-bottom: 20px;
+#home {
+    background: lavender;
+}
+
+#resources {
+    background: lightcyan;
+}
+
+#contact {
+    background: lightyellow;
 }
 
 footer {
     text-align: center;
-    padding: 10px 0;
+    padding: 20px;
     background: #0077cc;
     color: white;
 }
 
-@media only screen and (max-width: 600px) {
+@media (max-width: 600px) {
     header, footer {
         text-align: center;
     }
